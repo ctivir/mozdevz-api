@@ -9,7 +9,6 @@ dash-html-components==1.1.1
 dash-renderer==1.8.3
 dash-table==4.11.1
 dj-database-url==0.5.0
-environ
 dj-static==0.0.6
 Django==3.1.1
 django-cors-headers==3.7.0
