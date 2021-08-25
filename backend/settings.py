@@ -25,7 +25,7 @@ SECRET_KEY = '7qt0^9-htzgahnjqc955))(zi@qs_%#z=jol&$ckh3kj*r=di0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mzdevz-api.herokuapp.com']
+ALLOWED_HOSTS = ['mozdevz-api.herokuapp.com']
 
 # Application definition
 
