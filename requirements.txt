@@ -38,3 +38,4 @@ static3==0.7.0
 todo==0.1
 urllib3==1.26.2
 Werkzeug==1.0.1
+whitenoise==5.3.0
