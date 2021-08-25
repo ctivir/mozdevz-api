@@ -1,6 +1,0 @@
-#saving var
-SECRET_KEY='7qt0^9-htzgahnjqc955))(zi@qs_%#z=jol&$ckh3kj*r=di0'
-
-DEBUG=True
-
-heroku config:set $(cat .env | sed '/^$/d; /#[[:print:]]*$/d')
