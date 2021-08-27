@@ -6,15 +6,15 @@ from .choices import TEAM_CHOICES
 class Program(models.Model):
     title = models.CharField(max_length=120)
     description = models.TextField()
-    logo = models.ImageField(upload_to='images')
+    img_url = models.CharField(max_length=500)
+    #logo = models.ImageField(upload_to='images')
 
     def _str_(self):
         return self.title
 
 class Geral(models.Model):
-    quemSomos = models.CharField(max_length=250)
-    visao = models.CharField(max_length=250)
-    oqueFazemos = models.CharField(max_length=250)
+    id = models.CharField(max_length=250)
+    description = models.CharField(max_length=250)
     logo = models.CharField(max_length=250)
 
     def __str__(self):
@@ -24,7 +24,7 @@ class Geral(models.Model):
 class Embassador(models.Model):
     name = models.CharField(max_length=250)
     site = models.CharField(max_length=250)
-    logo = models.CharField(max_length=250)
+    img_url = models.CharField(max_length=500)
 
     def __str__(self):
         return self.name
@@ -44,7 +44,8 @@ class Person(models.Model):
     team = models.CharField(choices=TEAM_CHOICES, blank=False,
                             null=False, default='Embassador', max_length=30)
     ocupation = models.CharField(max_length=30)
-    picture = models.ImageField(upload_to='images/')
+    #picture = models.ImageField(upload_to='images/')
+    img_url = models.CharField(max_length=500)
 
     def __str__(self):
         return self.fullname
