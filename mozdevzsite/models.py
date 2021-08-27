@@ -13,7 +13,6 @@ class Program(models.Model):
         return self.title
 
 class Geral(models.Model):
-    id = models.CharField(max_length=250)
     description = models.CharField(max_length=250)
     logo = models.CharField(max_length=250)
 
