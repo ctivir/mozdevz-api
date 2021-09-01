@@ -85,6 +85,7 @@ TEMPLATES = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
+    'https://mozdevz-frontend-5vqlshctz-rurushu.vercel.app/',
     'https://localhost:3000',
     'https://127.0.0.1:3000',
 ]
