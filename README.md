@@ -23,7 +23,7 @@ This project is based on the React + Django Training by Mozdevz.
 
 ### Links
 
-[Mozdevz - Beta](http://mozdevz-frontend.vercel.app/) - Hosted at Vercel
+[Mozdevz - Beta](mozdevz-api.herokuapp.com/api/) - Hosted at Heroku
 
 [Figma Design](https://www.figma.com/file/aWCVAvMyCHSj0POFTU0w5Z/MozdevzUI?node-id=0%3A1) - Figma with the UI. Not done yet, contributors are welcome.
 
