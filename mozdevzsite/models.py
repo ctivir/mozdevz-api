@@ -6,15 +6,14 @@ from .choices import TEAM_CHOICES
 class Program(models.Model):
     title = models.CharField(max_length=120)
     description = models.TextField()
-    img_url = models.CharField(max_length=500)
-    #logo = models.ImageField(upload_to='images')
+    img_url = models.URLField(default="http://")
 
     def _str_(self):
         return self.title
 
 class Geral(models.Model):
     description = models.CharField(max_length=250)
-    logo = models.CharField(max_length=250)
+    logo = models.URLField(default="http://")
 
     def __str__(self):
         return self.quemSomos
@@ -23,7 +22,7 @@ class Geral(models.Model):
 class Embassador(models.Model):
     name = models.CharField(max_length=250)
     site = models.CharField(max_length=250)
-    img_url = models.CharField(max_length=500)
+    img_url = models.URLField(default="http://")
 
     def __str__(self):
         return self.name
@@ -43,8 +42,7 @@ class Person(models.Model):
     team = models.CharField(choices=TEAM_CHOICES, blank=False,
                             null=False, default='Embassador', max_length=30)
     ocupation = models.CharField(max_length=30)
-    #picture = models.ImageField(upload_to='images/')
-    img_url = models.CharField(max_length=500)
+    img_url = models.URLField(default="http://")
 
     def __str__(self):
         return self.fullname
