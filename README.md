@@ -45,7 +45,7 @@ We highly recommend and only officially support the latest patch release of each
 
 - Install using pip...
 
- 1. pip install djangorestframework
+ 1. pip install -r requirements.txt
 
 
 ### How to contribute
@@ -54,9 +54,14 @@ To contribute to this project you have to fork it and clone it.
 
 After cloning it, in the project directory, run:
 
- 1.  `./manage.py migrate` to appy all migrations.
-
- 2.  `./manage.py runserver` to run the app in the development mode.
+ 
+ 1. `cd mozdevz-api` Get project folder
+ 2. `python3 -m venv env` create virtual env
+ 3. `ource env/bin/activate` activate virtual env
+ 4. `./python manage.py createsuperuser` create superuser to have access to django admin
+ 5. `./manage.py makemigrations` create new migrations based on the changes you have made to your models.
+ 6.  `./manage.py migrate` to appy all migrations.
+ 7.  `./manage.py runserver` to run the app in the development mode.
      Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
      The page will reload if you make edits.
