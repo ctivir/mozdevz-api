@@ -57,7 +57,7 @@ After cloning it, in the project directory, run:
  
  1. `cd mozdevz-api` Get project folder
  2. `python3 -m venv env` create virtual env
- 3. `ource env/bin/activate` activate virtual env
+ 3. `source env/bin/activate` activate virtual env
  4. `./python manage.py createsuperuser` create superuser to have access to django admin
  5. `./manage.py makemigrations` create new migrations based on the changes you have made to your models.
  6.  `./manage.py migrate` to appy all migrations.
